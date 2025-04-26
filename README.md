@@ -1,7 +1,7 @@
 ## Get Started
 
 ### Installation
-1. Clone InstantSplat and download pre-trained model.
+1. Clone the DenseColmap repository and download pre-trained model.
 ```bash
 git clone --recursive https://github.com/RonnieyL/DenseColmap.git
 cd densecolmap
@@ -9,7 +9,9 @@ mkdir -p mast3r/checkpoints/
 wget https://download.europe.naverlabs.com/ComputerVision/MASt3R/MASt3R_ViTLarge_BaseDecoder_512_catmlpdpt_metric.pth -P mast3r/checkpoints/
 ```
 
-2. Create the environment (or use pre-built docker), here we show an example using conda.
+You may have to download NVIDIA CUB based on the version of Nvidia toolkit that you are running. ( <12.0 requires NVIDIA CUB to be installed)
+
+2. Create the environment, here we show an example using conda.
 ```bash
 conda create -n densecolmap python=3.10.13 cmake=3.14.0 -y
 conda activate densecolmap
