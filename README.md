@@ -51,6 +51,19 @@ python alt_convert.py --source_dir path/to/images --model_dir path/to/output --c
 
 The confidence threshold parameter (--conf_threshold) can be adjusted to control point density vs. quality trade-off.
 
+### `visualize.py` - Quick COLMAP Scene Viewer
+
+For fast visualization of COLMAP bins without starting a Viser server:
+```powershell
+python visualize.py path/to/sparse/0
+```
+
+## Intended Use
+
+The goal is that one can directly use the outputs of convert.py in a gaussian splatting pipeline such as Gsplat (from UC Berkeley) or the original Gaussian Splatting pipeline (from the Kerbl paper)
+
+![Sample Scene](assets/fast3r_samplesplat.png)
+
 ## Acknowledgement
 
 This work is built on many amazing research works and open-source projects, thanks a lot to all the authors for sharing!
